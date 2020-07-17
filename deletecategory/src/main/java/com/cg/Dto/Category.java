@@ -57,5 +57,21 @@ public class Category {
 	public void setBooks(List<Book> books) {
 		this.books = books;
 	}
+
+
+	public Category(int categoryId, String categoryName, List<Book> books) {
+		super();
+		CategoryId = categoryId;
+		CategoryName = categoryName;
+		this.books = books;
+	}
+
+
+	public Category() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
 	
 }

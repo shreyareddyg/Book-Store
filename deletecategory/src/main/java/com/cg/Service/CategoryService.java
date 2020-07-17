@@ -111,6 +111,10 @@ public class CategoryService {
         if (book.getTitle() == null ||  book.getTitle().isEmpty()) {
             throw new CategoryException(ErrorCode.BAD_DATA, "Title should not be empty");
         }
+        if(book.getPrice() == 0)
+        {
+        	throw new CategoryException(ErrorCode.BAD_DATA, "Price has to be more than zero");
+        }
         return true;
     }
 
